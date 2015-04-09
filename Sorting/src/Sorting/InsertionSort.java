@@ -8,10 +8,7 @@ public class InsertionSort {
 	 * @param unsortedArray		an unsorted array of integers
 	 * @return					the input array, sorted least to greatest
 	 */
-<<<<<<< HEAD
-	public static int[] insertionSort(int[] list) {
-		return null;
-=======
+
 	public static int[] insertionSort(int[] unsortedArray) {
 		//TODO: S2 implements insertion sort
 		for (int i = 1; i < unsortedArray.length; i ++) {
@@ -26,7 +23,6 @@ public class InsertionSort {
 			}
 		}	
 		return unsortedArray;
->>>>>>> Insertion sort
 	}
 
 }
