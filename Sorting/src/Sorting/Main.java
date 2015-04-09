@@ -8,7 +8,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		//Generates a random array
-		int[] unsortedArray = new int[(int) (Math.random()*20.0)];
+		int[] unsortedArray = new int[(int) (Math.random()*20.0) + 10];
 		for (int i = 0; i < unsortedArray.length; i++) {
 			unsortedArray[i] = (int) (Math.random()*20.0);
 		}
@@ -22,8 +22,10 @@ public class Main {
 		
 		System.out.println("Sorted Array:");
 		//TODO: sort the array and print out its contents
-		
-		
+		BubbleSort.bubbleSort(unsortedArray);
+		for (int i: unsortedArray) {
+			System.out.print(i + " ");
+		}
 	}
 
 }
